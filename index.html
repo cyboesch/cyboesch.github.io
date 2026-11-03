@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cyrill Bösch</title>
+  <meta name="description" content="Cyrill Bösch, postdoctoral researcher at Princeton University. Topological waves, computing with physical systems, and physical learning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <noscript><style>.abstract[hidden] { display: block !important; } .abstract-toggle { display: none; }</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="photo">
+        <img src="img/ich_website.jpg" alt="Portrait of Cyrill Bösch" width="408" height="305" fetchpriority="high">
+      </div>
+
+      <h1 class="name">Cyrill Bösch</h1>
+      <p class="affiliation">
+        Postdoctoral Researcher<br>
+        <a href="https://lips.cs.princeton.edu/" target="_blank" rel="noopener">Laboratory for Intelligent Probabilistic Systems</a><br>
+        Princeton University
+      </p>
+
+      <nav class="profile-links" aria-label="Contact and profiles">
+        <a href="cv/Boesch_CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="https://scholar.google.com/citations?user=TCozq-0AAAAJ" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://orcid.org/0000-0002-1587-7572" target="_blank" rel="noopener">ORCID</a>
+        <a href="mailto:cb7454@princeton.edu">Email</a>
+      </nav>
+    </aside>
+
+    <main id="content" class="content">
+      <div class="intro">
+        <p>
+          I am a postdoctoral researcher in the
+          <a href="https://lips.cs.princeton.edu/" target="_blank" rel="noopener">Laboratory for Intelligent Probabilistic Systems</a>
+          at Princeton University, working with
+          <a href="https://www.cs.princeton.edu/~rpa/" target="_blank" rel="noopener">Ryan P. Adams</a>.
+          I am interested in topological waves, computing with physical systems, and physical learning.
+        </p>
+        <p>
+          I also opened a couple of climbing routes
+          in <a href="first-ascents/SA_Topos.pdf" target="_blank" rel="noopener">Saudi Arabia</a>,
+          on the <a href="first-ascents/PizPolaschin.pdf" target="_blank" rel="noopener">Julier Pass</a>,
+          in <a href="https://publications.americanalpineclub.org/articles/13201215377" target="_blank" rel="noopener">Oman</a>
+          and in the <a href="https://www.planetmountain.com/en/news/alpinism/miyar-valley-first-ascent-of-lotus-tower-se-face.html" target="_blank" rel="noopener">Indian Himalaya</a>.
+        </p>
+      </div>
+
+      <section id="publications">
+        <h2>Selected Publications</h2>
+        <ul class="papers">
+          <li>
+            <a class="paper-title" href="https://arxiv.org/abs/2608.11585" target="_blank" rel="noopener">Unifying Physical Backpropagation</a>.
+            <strong>C. Bösch</strong>, Y. Gediz, C. C. Wanjura and H. E. Türeci.
+            2026. <cite>arXiv:2608.11585</cite>.
+            <button type="button" class="abstract-toggle" aria-controls="abs-unifying" aria-expanded="false">[Abstract]</button>
+            <a class="extra" href="https://arxiv.org/pdf/2608.11585" target="_blank" rel="noopener">[PDF]</a>
+            <div class="abstract" id="abs-unifying" hidden>
+              <p>Physical computing systems exploit device dynamics for computation, but their gradient-based optimization is challenging: backpropagation through a digital twin suffers from a model-reality gap. On-device gradient computation could resolve this issue, and a handful of theoretical and experimental studies have proposed ways to achieve it. Yet a unifying theory identifying when a physical system can compute the gradient of its own performance has been missing. Here we develop such a unification based on the adjoint method: we identify sufficient conditions under which the adjoint field required for formally exact gradients can be generated on the same hardware that performs the computation. Linear and nonlinear systems obey fundamentally different conditions: for linear systems, damping or gain is admissible provided reciprocity is preserved. For nonlinear trajectory systems, the sufficient conditions are reciprocity of the linearized system and the existence of a time-reversal mirror. Algorithmically, the nonlinear case requires infinitesimal nudging, whereas linear systems admit a finite-amplitude experiment. We recover (quantum) Equilibrium Propagation, Hamiltonian echo backpropagation, fully forward mode training and in situ gradient methods in integrated-photonic and free-space-optical systems. Finally, we show that reciprocity is a special case of more general intertwining conditions. For linear systems, these permit exact on-device gradients in a class of non-Hermitian, non-reciprocal systems. For nonlinear trajectories, they combine with generalized time-reversal mirrors to cover, e.g., PT-symmetric equations. The framework also includes time-dependent parameters and Onsager-reciprocal dynamics, providing a unified basis for formally exact physical learning.</p>
+            </div>
+          </li>
+          <li>
+            <a class="paper-title" href="https://doi.org/10.1103/t8wt-mp2l" target="_blank" rel="noopener">Quantum wave simulation with sources and loss functions</a>.
+            <strong>C. Bösch</strong>&dagger;, M. Schade&dagger;, G. Aloisi, S. D. Keating and A. Fichtner.
+            2025. <cite>Physical Review Research</cite> 7, 033225.
+            <button type="button" class="abstract-toggle" aria-controls="abs-quantumwave" aria-expanded="false">[Abstract]</button>
+            <div class="abstract" id="abs-quantumwave" hidden>
+              <p>We present a quantum algorithmic framework for simulating linear, anti-Hermitian (lossless) wave equations in heterogeneous, anisotropic, and time-independent media. This framework encompasses a broad class of wave equations, including the acoustic wave equation, Maxwell’s equations, and the elastic wave equation. Our formulation is compatible with standard numerical discretization schemes and allows for the efficient implementation of multiple practically relevant time- and space-dependent sources. Furthermore, we demonstrate that subspace energies can be extracted and wave fields compared through an &#8467;<sub>2</sub> loss function, achieving optimal precision scaling with the number of samples taken. Additionally, we introduce techniques for incorporating boundary conditions and linear constraints that preserve the anti-Hermitian nature of the equations. Leveraging the Hamiltonian simulation algorithm, our framework achieves a quartic speedup over classical solvers in three-dimensional simulations, under conditions of sufficiently global measurements and compactly supported sources and initial conditions. This quartic speedup is optimal for time-domain solutions, as the Hamiltonian of the discretized wave equations has local couplings. In summary, our framework provides a versatile approach for simulating wave equations on quantum computers, offering substantial speedups over state-of-the-art classical methods.</p>
+            </div>
+          </li>
+          <li>
+            <a class="paper-title" href="https://arxiv.org/abs/2504.20401" target="_blank" rel="noopener">Nonlinear Computation with Linear Optics via Source-Position Encoding</a>.
+            N. Richardson, <strong>C. Bösch</strong> and R. P. Adams.
+            2025. <cite>arXiv:2504.20401</cite>.
+            <button type="button" class="abstract-toggle" aria-controls="abs-sourcepos" aria-expanded="false">[Abstract]</button>
+            <a class="extra" href="https://arxiv.org/pdf/2504.20401" target="_blank" rel="noopener">[PDF]</a>
+            <div class="abstract" id="abs-sourcepos" hidden>
+              <p>Optical computing systems provide an alternate hardware model which appears to be aligned with the demands of neural network workloads. However, the challenge of implementing energy efficient nonlinearities in optics &ndash; a key requirement for realizing neural networks &ndash; is a conspicuous missing link. In this work we introduce a novel method to achieve nonlinear computation in fully linear media. Our method can operate at low power and requires only the ability to drive the optical system at a data-dependent spatial position. Leveraging this positional encoding, we formulate a fully automated, topology-optimization-based hardware design framework for extremely specialized optical neural networks, drawing on modern advancements in optimization and machine learning. We evaluate our optical designs on machine learning classification tasks: demonstrating significant improvements over linear methods, and competitive performance when compared to standard artificial neural networks.</p>
+            </div>
+          </li>
+          <li>
+            <a class="paper-title" href="https://doi.org/10.1103/PhysRevB.102.241404" target="_blank" rel="noopener">Discovery of topological metamaterials by symmetry relaxation and smooth topological indicators</a>.
+            <strong>C. Bösch</strong>, T. Dubček, F. Schindler, A. Fichtner and M. Serra-Garcia.
+            2020. <cite>Physical Review B</cite> 102, 241404.
+            <button type="button" class="abstract-toggle" aria-controls="abs-topo" aria-expanded="false">[Abstract]</button>
+            <a class="extra" href="https://arxiv.org/abs/2006.14462" target="_blank" rel="noopener">[arXiv]</a>
+            <div class="abstract" id="abs-topo" hidden>
+              <p>Robustness against small perturbations is a crucial feature of topological properties. This robustness is both a source of theoretical interest and a drive for technological applications, but presents a challenge when looking for new topological systems: Small perturbations cannot be used to identify the global direction of change in the topological indices. Here, we overcome this limitation by breaking the symmetries protecting the topology. The introduction of symmetry-breaking terms causes the topological indices to become non-quantized variables, which are amenable to efficient design algorithms based on gradient methods. We demonstrate this capability by designing discrete and continuous phononic systems realizing conventional and higher-order topological insulators.</p>
+            </div>
+          </li>
+        </ul>
+        <p class="note">
+          &dagger; Equal contribution. All publications are listed in my
+          <a href="cv/Boesch_CV.pdf" target="_blank" rel="noopener">CV</a> and on
+          <a href="https://scholar.google.com/citations?user=TCozq-0AAAAJ" target="_blank" rel="noopener">Google Scholar</a>.
+        </p>
+      </section>
+
+      <footer class="note credits">
+        Website design credits go to
+        <a href="https://vincentheddesheimer.github.io/" target="_blank" rel="noopener">Vincent Heddesheimer</a>.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

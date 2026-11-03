@@ -1,0 +1,12 @@
+.DS_Store
+
+# Private: contains home address, phone, date of birth. Replace with a public CV before removing this line.
+cv.pdf
+
+# LaTeX build files
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.fls
+cv/*.fdb_latexmk
+cv/*.synctex.gz

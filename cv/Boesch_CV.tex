@@ -1,0 +1,119 @@
+% Public CV for cyboesch.github.io. Build with:  cd cv && latexmk -pdf Boesch_CV.tex
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt}{4pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlist[enumerate]{leftmargin=*, itemsep=4pt, topsep=4pt}
+
+\newcommand{\me}{C.~Bösch}
+\newcommand{\journal}[1]{\textbf{\emph{#1}}}
+\newcommand{\sub}[1]{\par{\leftskip=1em #1\par}}
+
+\begin{document}
+
+{\LARGE\bfseries Cyrill Bösch}\par
+\vspace{4pt}\hrule\vspace{12pt}
+
+\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}l@{}}
+  Laboratory for Intelligent Probabilistic Systems & Email: \href{mailto:cb7454@princeton.edu}{\texttt{cb7454@princeton.edu}} \\
+  Princeton University, Princeton, NJ, USA          & Web: \href{https://cyboesch.github.io}{\texttt{cyboesch.github.io}} \\
+                                                    & ORCID: \href{https://orcid.org/0000-0002-1587-7572}{\texttt{0000-0002-1587-7572}}
+\end{tabular*}
+
+\section*{Positions}
+Postdoctoral Researcher, Laboratory for Intelligent Probabilistic Systems, Princeton University, 2024--present
+\sub{Adviser: Ryan P. Adams}
+
+Postdoctoral Researcher, Seismology and Wave Physics, ETH Zurich, 2023--2024
+
+Visiting Researcher, Bertoldi Lab, Harvard University (Host: Katia Bertoldi), 2022
+
+\section*{Education}
+Dr.\ sc., ETH Zurich, 2019--2024
+\sub{Thesis: \emph{Topological Matter by Inverse Design}. Adviser: Andreas Fichtner; co-adviser: Marc Serra-Garcia}
+
+M.Sc., \emph{Geophysics}, ETH Zurich, 2018
+\sub{Thesis: \emph{Numerical Homogenization for the Elastic Wave Equation}}
+
+B.Sc., \emph{Earth Sciences}, ETH Zurich, 2014
+
+\section*{Publications}
+{\small $^\dagger$Equal contribution.}
+\begin{enumerate}
+  \item Quantum wave simulation with sources and loss functions. \me$^\dagger$, M.~Schade$^\dagger$, G.~Aloisi, S.~D.~Keating and A.~Fichtner. \journal{Physical Review Research} 7, 033225 (2025).
+  \item Adjoint computation of Berry phase gradients. \me, M.~Serra-Garcia, C.~Böhm and A.~Fichtner. \journal{Journal of Sound and Vibration} 619, 119357 (2025).
+  \item Automated discovery of reprogrammable nonlinear dynamic metamaterials. G.~Bordiga, E.~Medina, S.~Jafarzadeh, \me, R.~P.~Adams, V.~Tournat and K.~Bertoldi. \journal{Nature Materials} 23, 1486--1494 (2024).
+  \item Differences between quantum and classical adiabatic evolution. \me, A.~Fichtner and M.~Serra-Garcia. \journal{Physical Review B} 110, 064307 (2024).
+  \item A quantum computing concept for 1-D elastic wave simulation with exponential speedup. M.~Schade$^\dagger$, \me$^\dagger$, V.~Hapla and A.~Fichtner. \journal{Geophysical Journal International} 238(1), 321--333 (2024).
+  \item Diffuse ultrasound computed tomography. I.~E.~Ulrich, C.~Boehm, A.~Zunino, \me\ and A.~Fichtner. \journal{The Journal of the Acoustical Society of America} 151(6), 3654--3668 (2022).
+  \item Discovery of topological metamaterials by symmetry relaxation and smooth topological indicators. \me, T.~Dubček, F.~Schindler, A.~Fichtner and M.~Serra-Garcia. \journal{Physical Review B} 102, 241404 (2020).
+\end{enumerate}
+
+\section*{Preprints}
+\begin{enumerate}
+  \item Unifying Physical Backpropagation. \me, Y.~Gediz, C.~C.~Wanjura and H.~E.~Türeci. arXiv:2608.11585 (2026).
+  \item Local Learning Rules for Out-of-Equilibrium Physical Generative Models. \me, G.~Roeder, M.~Serra-Garcia and R.~P.~Adams. arXiv:2506.19136 (2025).
+  \item Nonlinear Computation with Linear Optics via Source-Position Encoding. N.~Richardson, \me\ and R.~P.~Adams. arXiv:2504.20401 (2025).
+\end{enumerate}
+
+\section*{Patents}
+U.S. provisional patent application on source-position encoding for nonlinear optical computation, filed through Princeton University; first-named inventor. Pending.
+
+\section*{Grants and Fellowships}
+Princeton University Innovation Grant (USD 200,000, shared between the labs of Ryan P. Adams and Paul Prucnal), 2026
+
+SNSF Postdoc.Mobility Return Grant, EPFL, \emph{Local learning for optical diffusion models} (CHF 115,200), 2025
+
+SNSF Postdoc.Mobility Fellowship, Princeton University, \emph{Probabilistic Mechanical Intelligence} (CHF 124,000), 2023
+
+ETH Doc.Mobility Fellowship, research visit to Harvard University (CHF 2,571), 2022
+
+\section*{Awards}
+ETH Medal for Outstanding Doctoral Thesis, ETH Zurich, 2024
+
+Willi Studer Prize, best M.Sc. graduate in Earth Sciences, ETH Zurich, 2018
+
+ETH Zurich Master's Scholarship Programme, 2015--2017
+
+\section*{Invited Seminars}
+Center for Soft and Living Matter, University of Pennsylvania (groups of Andrea Liu and Douglas Durian), February 2026
+
+Quantum Engineering Group (Hakan Türeci), Princeton University, April 2025
+
+Kollmannsberger Group, Bauhaus University Weimar, April 2024
+
+\section*{Selected Talks}
+2nd Conference on Computing with Physical Systems, Les Houches, France, January 2026
+
+Aspen Summer School on Beyond von Neumann Computing, Aspen Center for Physics, May 2025
+
+Aspen Conference on Computing with Physical Systems, January 2024
+
+\section*{Mentoring}
+Jake Schäfer, undergraduate researcher, Princeton, 2025--present
+
+Yigithan Gediz, doctoral researcher, Princeton, 2025--present
+
+Sowmya Thanvantri, doctoral researcher, Princeton, 2025--present
+
+Malte Schade, doctoral researcher, ETH Zurich, 2024--present; master's researcher, 2023--2024
+
+Arin Mukherjee, master's researcher, Princeton, 2024--present
+
+Nicholas Richardson, doctoral researcher, Princeton, 2024--2025
+
+Yash Sharma, undergraduate researcher, Princeton, 2024--2025
+
+\section*{Teaching}
+Teaching Assistant, \emph{Dynamic Earth}, ETH Zurich, Spring 2020
+
+\end{document}
