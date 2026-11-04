@@ -245,3 +245,55 @@ cite {
   .photo, .abstract-toggle, .skip-link { display: none; }
   .abstract[hidden] { display: block !important; }
 }
+
+/* ---------- Single-column pages (e.g. climbing) ---------- */
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.page h1 {
+  margin: 28px 0 18px;
+  color: var(--heading);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+}
+
+.back {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.page figure { margin: 28px 0 0; }
+
+.page figure img {
+  display: block;
+  max-width: 100%;
+  max-height: 600px;
+  width: auto;
+  height: auto;
+  border-radius: 3px;
+}
+
+.page figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.route { margin-top: 48px; }
+.route h2 { margin-top: 0; }
+
+.facts {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .page { padding: 32px 20px 56px; }
+  .page h1 { font-size: 27px; }
+}
